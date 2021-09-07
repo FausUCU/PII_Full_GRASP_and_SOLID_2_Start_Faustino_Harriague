@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "IbiOofKXWPqAW43TxgqF4iXq4DSKR8wLtNaONbJdYOz1NYBl6VDJVi6SzLkjH0ZmKCWgX1ar2hsvrR69fA2k0A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\faust\\OneDrive\\Escritorio\\Programacion02\\Tareas\\Proyectos\\GRASySOLID_II\\PII_Full_GRASP_and_SOLID_2_Start_Faustino_Harriague-master\\src\\Program\\Program.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\faust\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\faust\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\faust\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512",
+    "C:\\Users\\faust\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.18\\microsoft.netcore.app.host.win-x64.3.1.18.nupkg.sha512"
+  ],
+  "logs": []
+}
