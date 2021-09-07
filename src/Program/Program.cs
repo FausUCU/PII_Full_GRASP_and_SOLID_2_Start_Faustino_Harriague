@@ -19,13 +19,23 @@ namespace Full_GRASP_And_SOLID
 
         public static void Main(string[] args)
         {
+            PrintConsole print=new PrintConsole();
             PopulateCatalogs();
 
             Recipe recipe = new Recipe();
             recipe.FinalProduct = GetProduct("Café con leche");
             recipe.AddStep(new Step(GetProduct("Café"), 100, GetEquipment("Cafetera"), 120));
             recipe.AddStep(new Step(GetProduct("Leche"), 200, GetEquipment("Hervidor"), 60));
-            recipe.PrintRecipe();
+            /*El cambio que realice fue crear una clase PrintConsole separa de Recepie que se encarge de imprima un sring dada en la consola,
+            pero mantuve en la clase Recpie la funcion de generar dicho extring porque en ella estan todas las funciones para determinar
+            el texto que deve ser impreso.
+            Extraer la responsa de Escrivir en la consola de la funcion Recipe e generar una clase nueva para hacerlo es
+            un aplicacion del principio SRP ya que no hay nada en Recipe que la haga apropiada para escrivir en la consola
+            y es algo que requiere su propia clase, pero que Recipe mantenga la responsavilidad de generar el texto a imprimir
+            es una aplicacion de EXPERT ya que Recipe tiene toda la informacion que deve ser impresa  */
+            print.PrinttoConsole(recipe.PrintRecipe());
+
+
         }
 
         private static void PopulateCatalogs()

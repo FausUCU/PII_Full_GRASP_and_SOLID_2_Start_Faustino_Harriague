@@ -24,15 +24,24 @@ namespace Full_GRASP_And_SOLID.Library
         {
             this.steps.Remove(step);
         }
-
-        public void PrintRecipe()
+        /*Elimine La funcion de imprimir line de la clase receta, cre una clase que imprima consola en su 
+        propia clase (PrintConsole.cs) que simplemente imprime un string que se le de.
+        Mantuve en la clase Recepie la funcion de generar el texto a imprmir ya que toda la informacion que deve ser impresa
+        se obtiene de esta clase.
+        */
+        public String PrintRecipe()
         {
-            Console.WriteLine($"Receta de {this.FinalProduct.Description}:");
-            foreach (Step step in this.steps)
+            String texto="";
+           texto=($"Receta de {this.FinalProduct.Description}:");
+           foreach (Step step in this.steps)
             {
-                Console.WriteLine($"{step.Quantity} de '{step.Input.Description}' " +
+                texto+=($"\n{step.Quantity} de '{step.Input.Description}' " +
                     $"usando '{step.Equipment.Description}' durante {step.Time}");
             }
+            return texto;
         }
     }
+   
+    
+    
 }
